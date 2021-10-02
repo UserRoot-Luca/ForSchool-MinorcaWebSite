@@ -1,12 +1,11 @@
 <template>
   <div class="home">
-    <!-- <div> {{in_languages['ita'].home}} </div> -->
+    home
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Home',
-    inject:['in_languages'],
+    name: 'Home'
   }
 </script>
