@@ -1,21 +1,27 @@
 <template>
   <div class="main">
-    <div class="nav_top">
-      <div class="nav_top__onMenu" v-on:click="onMenu" ref="nav_top__onMenu">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+    <div class="main__nav">
+      <div class="main__nav__top">
+        <span>
+          <svg enable-background="new 0 0 293.334 293.334" version="1.1" viewBox="0 0 293.33 293.33" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#4d73c4">
+              <path d="m146.67 0c-51.764 0-93.721 41.957-93.721 93.721 0 22.322 7.849 42.789 20.891 58.878 4.204 5.178 11.237 13.331 14.903 18.906 21.109 32.069 48.19 78.643 56.082 116.86 1.354 6.527 2.986 6.641 4.743 0.212 5.629-20.609 20.228-65.639 50.377-112.76 3.595-5.619 10.884-13.483 15.409-18.379 6.554-7.098 12.009-15.224 16.154-24.084 5.651-12.086 8.882-25.466 8.882-39.629 0-51.77-41.957-93.732-93.72-93.732zm0 144.36c-28.892 0-52.313-23.421-52.313-52.313 0-28.887 23.421-52.307 52.313-52.307s52.313 23.421 52.313 52.307c0 28.893-23.421 52.313-52.313 52.313z"/>
+              <circle cx="146.67" cy="90.196" r="21.756"/>
+            </g>
+          </svg>
+        </span>
+        <a href="http://maps.google.com/maps?ll=39.966667,4.083333&spn=0.1,0.1&t=m&q=39.966667,4.083333" target="_blank" rel="noopener noreferrer">39°58′N 4°05′E</a>
       </div>
-      <div class="nav_top__title">island of menorca</div>
+      <div class="main__nav__botton">
+        
+        <router-link to="/" class="main__nav__botton__link">Home</router-link>
+        <router-link to="/about" class="main__nav__botton__link">About</router-link>
+
+      </div>
+
     </div>
-
-    <div class="nav_left" ref="nav_left" style="display: none;">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </div>
-
-
     <router-view/>
+    <!-- <div class="nav_top__title">island of menorca</div> -->
   </div>
 </template>
 
@@ -35,22 +41,16 @@
         // this.axios.get(`${location.protocol}//${window.location.hostname}/api/routing/get.php`).then((res) => { this.data = res.data;});
         this.axios.get('http://localhost/[projects]/ForSchool-MinorcaWebSite/api/routing/get.php').then((res) => { this.data = res.data;});
       },
-      onMenu() {
-        this.$refs.nav_top__onMenu.classList.toggle("change")
-
-        let e = this.$refs.nav_left
-        if (e.style.display == 'block') e.style.display = 'none'
-        else if (e.style.display == 'none') e.style.display = 'block'
-      }
     }
   }
 </script>
 
 <style lang="scss">
   @font-face {
-    font-family: "Zilla Slab";
-    src: url("assets/fonts/Zilla Slab/ZillaSlab-Regular.ttf") format('truetype');
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format('truetype');
   }
+
   *{
     margin: 0px;
     padding: 0px;
@@ -60,52 +60,49 @@
   html, body, #app{
     width: 100%;
     height: 100%;
+    background-color: #f0f0f0;
   }
 
-  .nav_top{
+  .main__nav{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+
+  .main__nav__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  .main__nav__top svg{
+    width: 28px;
+  }
+
+  .main__nav__top a{
+    text-decoration: none;
+    font-family: "Roboto";
+    color: #4d73c4;
+  }
+
+  .main__nav__botton{
+    background-color: #e2e2e2;
     display: flex;
     justify-content: flex-start;
-    padding: 5px 10px;
-    align-items: center;
+    text-align: center;
+    padding-left: 45px;
+    margin: 5px 0px;
   }
 
-  .nav_top__title{
+  .main__nav__botton__link{
+    text-decoration: none;
+    font-family: "Roboto";
+    letter-spacing: 0.6px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 30px;
-    margin-left: 30px;
-    font-family: 'Zilla Slab', serif;
-  }
-
-  .nav_top__onMenu{
-      cursor: pointer;
-  }
-
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-
-  .change .bar2 {opacity: 0;}
-
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-
-  .nav_left{
-    display: block;
-    position: fixed;
-    background-color: #b83a3a;
-    height: 100%;
-    z-index: 2147483647;
+    padding: 25px 10px;
+    color: #000000;
+    &:hover{
+      color: #434777;
+    }
   }
 </style>
