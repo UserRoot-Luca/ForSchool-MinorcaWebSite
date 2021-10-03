@@ -6,16 +6,32 @@
     </div>
     <div class="container_top">
       <div class="main">
-        w.i.p
+        <HomeItem 
+          title = "dsds"
+          link  = "dsds"
+        />
       </div>
-
     </div>
+
+    <div class="container_history">
+      <div class="title">history</div>
+      <div class="history">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint praesentium tempore voluptatum. Fuga vero accusamus, rem, neque recusandae, necessitatibus dolor ratione similique et eveniet fugit? Reprehenderit, tempora porro. Vero, aspernatur?
+      </div>
+    </div>
+
+
   </div>
 </template>
 
 <script>
+  import HomeItem from '../components/HomeItem.vue'
+
   export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+      HomeItem
+    }
   }
 </script>
 
@@ -60,9 +76,16 @@
   }
 
   .container_top .main{
-    background-color: aqua;
+    background-color: #262626;
     width: 75%;
     height: 480px;
+  }
+
+
+
+  .container_history {
+    display: flex;
+    flex-direction: column;
   }
 
 
