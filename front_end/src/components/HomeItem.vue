@@ -1,5 +1,6 @@
 <template>
-    <div class="homeitem">
+    <div class="homeitem" v-on:click="this.$router.push(link)">
+        
         <div class="title">{{title}}</div>
     </div>
 </template>

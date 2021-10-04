@@ -10,18 +10,17 @@
             </g>
           </svg>
         </span>
-        <a href="http://maps.google.com/maps?ll=39.966667,4.083333&spn=0.1,0.1&t=m&q=39.966667,4.083333" target="_blank" rel="noopener noreferrer">39°58′N 4°05′E</a>
+        <a href="http://maps.google.com/maps?ll=39.966667,4.083333&spn=0.1,0.1&t=m&q=39.966667,4.083333" target="_blank" rel="noopener noreferrer">Where to find us</a>
       </div>
       <div class="main__nav__botton">
         
         <router-link to="/" class="main__nav__botton__link">Home</router-link>
-        <router-link to="/about" class="main__nav__botton__link">About</router-link>
+        <!-- <router-link to="/about" class="main__nav__botton__link">About</router-link> -->
 
       </div>
 
     </div>
     <router-view/>
-    <!-- <div class="nav_top__title">island of menorca</div> -->
   </div>
 </template>
 
@@ -57,6 +56,19 @@
     box-sizing: border-box;
   }
 
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
   html, body, #app{
     width: 100%;
     height: 100%;
