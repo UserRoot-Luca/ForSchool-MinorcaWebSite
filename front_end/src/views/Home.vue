@@ -7,6 +7,35 @@
     <div class="container_top">
       <div class="main">
         <HomeItem 
+          title       = "dsds"
+          description = " ddddddddddddddddddd dddddddddddddddddd ddddddddddddd sd dd d dd d d dddddd fdfdfdfdfdf  fdfdf d   fdfdfdf ddddddddddddddddddd dddddddddddddddddd ddddddddddddd sd dd d dd d d dddddd fdfdfdfdfdf  fdfdf d   fdfdfdf"
+          link        = "./about"
+        />
+        <HomeItem 
+          title = "dsds"
+          link  = "./about"
+        />
+        <HomeItem 
+          title = "dsds"
+          link  = "./about"
+        />
+        <HomeItem 
+          title = "dsds"
+          link  = "./about"
+        />
+        <HomeItem 
+          title = "dsds"
+          link  = "./about"
+        />
+        <HomeItem 
+          title = "dsds"
+          link  = "./about"
+        />
+        <HomeItem 
+          title = "dsds"
+          link  = "./about"
+        />
+        <HomeItem 
           title = "dsds"
           link  = "./about"
         />
@@ -47,7 +76,6 @@
 </script>
 
 <style lang="scss">
-
   @font-face {
     font-family: "Zilla Slab";
     src: url("../assets/fonts/Zilla Slab/ZillaSlab-Bold.ttf") format('truetype');
@@ -90,7 +118,11 @@
   .container_top .main{
     background-color: #262626;
     width: 75%;
-    height: 480px;
+    min-height: 480px;
+    padding: 8px 18px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .container_history {
@@ -102,6 +134,4 @@
   .container_history .history {
 
   }
-
-
 </style>
