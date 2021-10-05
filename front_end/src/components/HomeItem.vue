@@ -46,10 +46,8 @@ export default {
     .homeitem{
         flex: 1;
         flex-basis: 40%;
-        // background-color: #00ffff75;
         color: #ffffff;
         display: flex;
-        // align-items: center;
         font-family: "Roboto";
         margin: 10px 10px;
         padding: 5px;
