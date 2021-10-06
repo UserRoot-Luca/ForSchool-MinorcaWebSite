@@ -110,8 +110,8 @@
 </template>
 
 <script>
-  import HomeItem from '../components/HomeItem.vue'
-  import HistoryItem from '../components/HistoryItem.vue'
+  import HomeItem from '../components/home/HomeItem.vue'
+  import HistoryItem from '../components/home/HistoryItem.vue'
 
   export default {
     name: 'Home',

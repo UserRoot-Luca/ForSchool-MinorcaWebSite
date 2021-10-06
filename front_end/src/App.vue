@@ -44,7 +44,7 @@
         this.axios.get('http://localhost/[projects]/ForSchool-MinorcaWebSite/api/routing/get.php').then((res) => { this.data = res.data;});
       },
       getSizeWindow() {
-        if (window.screen.width < 640 && !this.reload) {
+        if ((window.screen.width < 640 || window.innerWidth < 640) && !this.reload) {
           document.body.innerHTML = '<div style="width: 100%; height: 100%; text-align: center; display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: Arial, Helvetica, sans-serif; text-transform: capitalize; letter-spacing: 0.8px;"><div>sorry! your screen resolution does not seem to be supported</div></div>';
           this.reload = true;
         }else if (this.reload) {

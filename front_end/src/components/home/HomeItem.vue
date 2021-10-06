@@ -36,11 +36,11 @@ export default {
 <style lang="scss">
     @font-face {
         font-family: "Roboto";
-        src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+        src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format('truetype');
     }
     @font-face {
         font-family: "RobotoBold";
-        src: url("../assets/fonts/Roboto/Roboto-Bold.ttf") format('truetype');
+        src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format('truetype');
     }
 
     .homeitem{
