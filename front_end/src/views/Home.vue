@@ -7,37 +7,44 @@
     <div class="container_top">
       <div class="main">
         <HomeItem 
-          title       = "Inosi luogi di intere "
-          description = "dsdsds  dsdsds d s ds d sd s ds d "
+          title       = "Places of Interest"
+          description = "Places you can visit, such as Ses Pedreres de s'Hostal and Ciutadella Old Town"
           link        = "./about"
         />
         <HomeItem 
-          title = "dsds"
-          link  = "./about"
+          title       = "Beaches"
+          description = "Sunbathe in one of our beaches, such as Cala Macarelleta and Calas Mitjana"
+          link        = "./about"
         />
         <HomeItem 
-          title = "dsds"
-          link  = "./about"
+          title       = "Gastronomy"
+          description = "See our typical dishes and wines"
+          link        = "./about"
         />
         <HomeItem 
-          title = "dsds"
-          link  = "./about"
+          title       = "History"
+          description = "Read the history of the Island"
+          link        = "./about"
         />
         <HomeItem 
-          title = "dsds"
-          link  = "./about"
+          title       = "Pubs and Restaurants"
+          description = "Take a look at one (or three) of our pubs or restaurants"
+          link        = "./about"
         />
         <HomeItem 
-          title = "dsds"
-          link  = "./about"
+          title       = "Vehicles rental"
+          description = "Find out where you can rent a car or a motorbike to move around the Island"
+          link        =  "./about"
         />
         <HomeItem 
-          title = "dsds"
-          link  = "./about"
+          title       = "How to get here"
+          description = "Find out how you can get here (definetly not by car)"
+          link        = "./about"
         />
         <HomeItem 
-          title = "dsds"
-          link  = "./about"
+          title       = "Accomodations"
+          description = "Take a look to our accomodations, whether it's a hotel or a house you're looking for, we probably have it"
+          link        = "./accomodations"
         />
       </div>
     </div>
@@ -58,7 +65,7 @@
                     The Roman reaction was not long in coming and in 123 BC. the Balearic Islands were occupied by the Romans and incorporated into Hispania Citerior."
           />
           <HistoryItem
-            title = "903 AC"
+            title = "903"
             text  = "With the conquest of peninsular Spain by the Arabs, Menorca was assigned to the Caliphate of Cordoba (903) and its name was Arabicized in Manûrqa.
                     under Muslim management, the Island resumed its ancient vocation as a refuge for piracy"
           />
