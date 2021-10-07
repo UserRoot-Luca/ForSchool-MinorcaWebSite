@@ -9,38 +9,41 @@
           />
           <Link 
             idLink  = "#apartment"
-            imgLink = ""
+            imgLink = "bg_link_apartment.jpg"
             title   = "apartment"
           />
           <Link 
             idLink  = "#room"
-            imgLink = ""
-            title   = "room"
+            imgLink = "bg_link_room.jpg"
+            title   = "single room"
           />
           <Link 
             idLink  = "#camping"
-            imgLink = ""
+            imgLink = "bg_link_camping.jpg"
             title   = "camping"
           />
         </div>
       </div>
 
+      <fieldset class="category" id="hotel">
+        <legend>hotel</legend>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui delectus deserunt expedita, dolorem amet impedit officiis nesciunt, eveniet sit blanditiis temporibus. Facilis iste beatae voluptas quidem eligendi odio sed velit?
+      </fieldset>
 
-      <div class="category" id="hotel">
-        hotel
-      </div>
+      <fieldset class="category" id="apartment">
+        <legend>apartment</legend>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur unde laborum minima voluptatum dolores odit deserunt sequi sint minus voluptate, ut, aut dolor iusto cupiditate asperiores beatae omnis voluptatibus veniam.
+      </fieldset>
 
-      <div class="category" id="apartment">
-        apartment
-      </div>
+      <fieldset class="category" id="room">
+        <legend>single room</legend>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur corrupti voluptatem molestias voluptatum ipsam, sapiente ad quidem ut animi quibusdam repellendus nam nihil, inventore unde vero similique saepe? Sit, est?
+      </fieldset>
 
-      <div class="category" id="room">
-        room
-      </div>
-
-      <div class="category" id="camping">
-        camping
-      </div>
+      <fieldset class="category" id="camping">
+        <legend>camping</legend>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum exercitationem sequi dignissimos ullam optio repudiandae repellendus. Officia, molestiae, aliquam, quod corrupti consectetur obcaecati recusandae animi blanditiis placeat sequi sapiente eveniet.
+      </fieldset>
     </div>
 </template>
 
@@ -61,15 +64,39 @@ export default {
 </script>
 
 <style lang="scss">
+  @font-face {
+    font-family: "Zilla Slab";
+    src: url("../assets/fonts/Zilla Slab/ZillaSlab-Regular.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+  }
+
   .links_container {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    margin-bottom: 75px;
   }
 
   .links_container .main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  .category{
+    padding: 8px 13px;
+    font-size: 16px;
+    font-family: "Roboto";
+    margin: 20px 35px;
+    border: solid 1px #000000;
+    &>legend{
+      font-size: 19px;
+      font-family: "Zilla Slab";
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
   }
 </style>

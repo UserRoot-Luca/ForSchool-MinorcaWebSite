@@ -1,16 +1,14 @@
 <template>
     <div class="item" :style="bgImg">
-        <img :src="require(`../../assets/img/accomodations/${this.imgLink}`)" alt="ss">
-        <a :href="idLink" class="title">{{title}}</a>
+        <div class="coloredTint" v-on:click="this.$router.push(idLink)">
+            <div :href="idLink" class="title">{{title}}</div>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Link',
-    created() {
-        console.log(`${this.imgLink}`);
-    },
     props: {
         imgLink: String,
         idLink: String,
@@ -18,30 +16,43 @@ export default {
     },
     computed: {
         bgImg() {
-            return `background-image: url('${this.imgLink}');`
-        }
-    }
+            return `background-image: url(${require(`@/assets/img/accomodations/${this.imgLink}`)});`
+        },
+    },
 }
 </script>
 
 <style lang="scss" scoped>
+    @font-face {
+        font-family: "RobotoBold";
+        src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format('truetype');
+    }
     .item{
-        // background-color: #000000;
+        background-color: #000000;
         margin: 8px;
         width: 205px;
         height: 205px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .title {
-        background-color: #2c2c2ccc;
         padding: 5px 15px;
         color: #ffffff;
         border-radius: 2px;
-        letter-spacing: 0.6px;
+        letter-spacing: 1.2px;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: "RobotoBold";
+    }
+    
+    .coloredTint{
+        background-color: #19282e9d;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>

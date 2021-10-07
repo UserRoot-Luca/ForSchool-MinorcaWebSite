@@ -124,7 +124,7 @@
 
 <style lang="scss">
   @font-face {
-    font-family: "Zilla Slab";
+    font-family: "Zilla Slab Bold";
     src: url("../assets/fonts/Zilla Slab/ZillaSlab-Bold.ttf") format('truetype');
   }
   @font-face {
@@ -142,7 +142,7 @@
   .container_title>.title{
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-family: "Zilla Slab";
+    font-family: "Zilla Slab Bold";
     font-size: 50px;
     margin-bottom: 15px;
     color: #000000;
@@ -184,7 +184,7 @@
     margin: 1em 0 0 0;
     line-height: 1;
     color:#000000;
-    font-family: "Zilla Slab";
+    font-family: "Zilla Slab Bold";
     font-size: 43px;
     letter-spacing: 1.8px;
     font-weight: 900;
