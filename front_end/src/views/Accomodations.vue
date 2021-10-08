@@ -5,45 +5,52 @@
           <Link 
             idLink  = "#hotel"
             imgLink = "bg_link_hotel.jpg"
-            title   = "hotel"
+            title   = "Hotels"
           />
           <Link 
             idLink  = "#apartment"
             imgLink = "bg_link_apartment.jpg"
-            title   = "apartment"
+            title   = "Apartments"
           />
           <Link 
             idLink  = "#room"
             imgLink = "bg_link_room.jpg"
-            title   = "single room"
+            title   = "Single room"
           />
           <Link 
             idLink  = "#camping"
             imgLink = "bg_link_camping.jpg"
-            title   = "camping"
+            title   = "Camping"
           />
         </div>
       </div>
 
       <fieldset class="category" id="hotel">
-        <legend>hotel</legend>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui delectus deserunt expedita, dolorem amet impedit officiis nesciunt, eveniet sit blanditiis temporibus. Facilis iste beatae voluptas quidem eligendi odio sed velit?
+        <legend>Hotels</legend>
+        Menorca can claim to have very prestigious tourist facilities and hotels. there are many of them all throught the Island, with star ratings that range from 3 to 5 stars, and in each and every one of them you will be treat with respect and professionality.
+        the hotels are located both in central zones, near places of interests and beaches, and in further away from the cities, where you can spend your holidays in contact with nature.
+        Rest assured that every hotel is located near public transportations and busses, even should you choose to stay in the most remote one.
+        Naturally, the offers are quite numerous, so you can be sure that you'll be able to find one that'll be sure to satisfy you 
       </fieldset>
 
       <fieldset class="category" id="apartment">
-        <legend>apartment</legend>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur unde laborum minima voluptatum dolores odit deserunt sequi sint minus voluptate, ut, aut dolor iusto cupiditate asperiores beatae omnis voluptatibus veniam.
+        <legend>Apartments</legend>
+        If you are looking for a more indipendent stay, or maybe you are with a group of friends and intend to split the bill, our apartments may be for you.
+        They are more convenient than hotels and offer more freedom, and you can bring your pet too; our apartment are also a great choice for large families and will make you feel like at home!
+        Should you opt for a longer stay, you'll probably be happy to know that the average rent is 400 euros monthly.
       </fieldset>
 
       <fieldset class="category" id="room">
-        <legend>single room</legend>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur corrupti voluptatem molestias voluptatum ipsam, sapiente ad quidem ut animi quibusdam repellendus nam nihil, inventore unde vero similique saepe? Sit, est?
+        <legend>Single room</legend>
+        If you are a couple or you are traveling alone, and are planning to stay for an extended period of time, such as 3 months, you may want to rent a room and get a taste of the ospitality the Island of Menorca is famous for.
+        Different landlords offer different rooms, but the offer is great and you'll be sure to find the room that suits your need the most, and why not, maybe the needs of your pet too, should you have one and decide to bring along your trusted companion.
       </fieldset>
 
       <fieldset class="category" id="camping">
-        <legend>camping</legend>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum exercitationem sequi dignissimos ullam optio repudiandae repellendus. Officia, molestiae, aliquam, quod corrupti consectetur obcaecati recusandae animi blanditiis placeat sequi sapiente eveniet.
-      </fieldset>
+        <legend>Camping</legend>
+        If what you are looking for is a holiday fully immersed in the nature, we have got you covered as well, all you need is to pack your tent and your camping gear and come spend the holidays at one of our two camping sites, Camping Son Bou and Camping S'Atalaia.
+        both camping sites have excellent facilities for your needs and are located no more than 3 kilometers from the sea.
+        </fieldset>
     </div>
 </template>
 
