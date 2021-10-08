@@ -1,7 +1,10 @@
 <template>
     <div class="item" :style="bgImg">
-        <div class="coloredTint" v-on:click="this.$router.push(idLink)">
-            <div :href="idLink" class="title">{{title}}</div>
+        <div class="coloredTint">
+            <a :href="idLink">
+                <div :href="idLink" class="title">{{title}}</div>
+
+            </a>
         </div>
     </div>
 </template>
@@ -51,8 +54,13 @@ export default {
         background-color: #19282e9d;
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        &>a {
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 </style>
