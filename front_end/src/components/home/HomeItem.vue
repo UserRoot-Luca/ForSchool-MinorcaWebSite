@@ -52,10 +52,12 @@ export default {
         margin: 10px 10px;
         padding: 5px;
         transition: 0.3s;
+        color: #000000;
         &:hover{
             background-color: #1b7452;
             border-radius: 2px;
             cursor: pointer;
+            color: #ffffff;
         }
     }
     .homeitem .box{

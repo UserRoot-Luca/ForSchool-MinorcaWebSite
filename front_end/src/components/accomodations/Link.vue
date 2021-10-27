@@ -3,7 +3,6 @@
         <div class="coloredTint">
             <a :href="idLink">
                 <div :href="idLink" class="title">{{title}}</div>
-
             </a>
         </div>
     </div>

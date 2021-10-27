@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="main__nav">
-      <div class="main__nav__top">
+      <!-- <div class="main__nav__top">
         <span>
           <svg enable-background="new 0 0 293.334 293.334" version="1.1" viewBox="0 0 293.33 293.33" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
             <g fill="#4d73c4">
@@ -11,12 +11,11 @@
           </svg>
         </span>
         <a href="http://maps.google.com/maps?ll=39.966667,4.083333&spn=0.1,0.1&t=m&q=39.966667,4.083333" target="_blank" rel="noopener noreferrer">Where to find us</a>
-      </div>
+      </div> -->
       <div class="main__nav__botton">
-        
         <router-link to="/" class="main__nav__botton__link">Home</router-link>
+        <a style="margin-left:auto" class="main__nav__botton__link" href="http://maps.google.com/maps?ll=39.966667,4.083333&spn=0.1,0.1&t=m&q=39.966667,4.083333" target="_blank" rel="noopener noreferrer">Where to find us</a>
         <!-- <router-link to="/about" class="main__nav__botton__link">About</router-link> -->
-
       </div>
 
     </div>
@@ -90,7 +89,7 @@
   .main__nav{
     display: flex;
     flex-direction: column;
-    padding: 10px 0px;
+    padding-bottom: 10px;
   }
 
   .main__nav__top{
@@ -115,7 +114,7 @@
     justify-content: flex-start;
     text-align: center;
     padding-left: 45px;
-    margin: 5px 0px;
+    margin-bottom: 5px;
   }
 
   .main__nav__botton__link{
