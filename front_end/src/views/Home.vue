@@ -1,9 +1,5 @@
 <template>
   <div class="home">
-    <div class="container_title">
-      <div class="title">island of menorca</div>
-      <div class="subtitle">Where the water is crystalline and the beaches wonderful</div>
-    </div>
     <div class="container_top">
       <div class="main">
         <HomeItem 
@@ -48,6 +44,14 @@
         />
       </div>
     </div>
+
+
+
+    <div class="container_title">
+      <div class="title"><h1>island of menorca</h1></div>
+      <div class="subtitle"><h3>Where the water is crystalline and the beaches wonderful</h3></div>
+    </div>
+
 
     <section class="container_history">
       <div class="main">
@@ -136,7 +140,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 6%;
   }
 
   .container_title>.title{
@@ -149,8 +153,8 @@
   }
 
   .container_title .subtitle{
-    letter-spacing: 0.6px;
-    font-size: 19px;
+    letter-spacing: 1px;
+    font-size: 23px;
     font-family: "Roboto";
     color: #161616;
   }
@@ -163,7 +167,7 @@
   }
 
   .container_top .main{
-    background-color: #262626;
+    background-color: #d9d7d7;
     width: 75%;
     min-height: 480px;
     padding: 8px 18px;
@@ -177,6 +181,7 @@
   .container_history {
     min-height: 80vh;
     padding: 2em 0 4em 0;
+    margin-top: 5%;
   }
 
   .container_history .heading>.title {

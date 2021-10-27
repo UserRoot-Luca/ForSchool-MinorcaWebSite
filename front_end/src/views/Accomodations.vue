@@ -112,16 +112,18 @@ export default {
 
   .category{
     padding: 8px 25px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Roboto";
-    margin: 20px 6%;
-    border: solid 1px #000000;
+    margin: 25px 6%;
+    // border: solid 1px #000000;
+    border: none;
     width: 62%;
     &>legend{
-      font-size: 19px;
+      font-size: 30px;
       font-family: "Zilla Slab";
       text-transform: uppercase;
       letter-spacing: 0.8px;
+      font-weight: bold;
     }
   }
   .category>p{
