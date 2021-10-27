@@ -5,37 +5,37 @@
         <HomeItem 
           title       = "Places of Interest"
           description = "Places you can visit, such as Ses Pedreres de s'Hostal and Ciutadella Old Town"
-          link        = "./about"
+          link        = "./places_of_interest"
         />
         <HomeItem 
           title       = "Beaches"
           description = "Sunbathe in one of our beaches, such as Cala Macarelleta and Calas Mitjana"
-          link        = "./about"
+          link        = "./beaches"
         />
         <HomeItem 
           title       = "Gastronomy"
           description = "See our typical dishes and wines"
-          link        = "./about"
+          link        = "./gastronomy"
         />
         <HomeItem 
           title       = "History"
           description = "Read the history of the Island"
-          link        = "./about"
+          link        = "./history"
         />
         <HomeItem 
           title       = "Pubs and Restaurants"
           description = "Take a look at one (or three) of our pubs or restaurants"
-          link        = "./about"
+          link        = "./pubs_and_restaurants"
         />
         <HomeItem 
           title       = "Vehicles rental"
           description = "Find out where you can rent a car or a motorbike to move around the Island"
-          link        =  "./about"
+          link        =  "./vehicles_rental"
         />
         <HomeItem 
           title       = "How to get here"
           description = "Find out how you can get here (definetly not by car)"
-          link        = "./about"
+          link        = "./how_to_get_here"
         />
         <HomeItem 
           title       = "Accomodations"
@@ -45,13 +45,10 @@
       </div>
     </div>
 
-
-
-    <div class="container_title">
-      <div class="title"><h1>island of menorca</h1></div>
-      <div class="subtitle"><h3>Where the water is crystalline and the beaches wonderful</h3></div>
-    </div>
-
+    <PageTitle
+      title    = "island of menorca"
+      subtitle = "Where the water is crystalline and the beaches wonderful"
+    />
 
     <section class="container_history">
       <div class="main">
@@ -116,12 +113,14 @@
 <script>
   import HomeItem from '../components/home/HomeItem.vue'
   import HistoryItem from '../components/home/HistoryItem.vue'
+  import PageTitle from '../components/PageTitle.vue'
 
   export default {
     name: 'Home',
     components: {
       HomeItem,
-      HistoryItem
+      HistoryItem,
+      PageTitle
     }
   }
 </script>
@@ -136,34 +135,11 @@
     src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format('truetype');
   }
 
-  .container_title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6%;
-  }
-
-  .container_title>.title{
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: "Zilla Slab Bold";
-    font-size: 50px;
-    margin-bottom: 15px;
-    color: #000000;
-  }
-
-  .container_title .subtitle{
-    letter-spacing: 1px;
-    font-size: 23px;
-    font-family: "Roboto";
-    color: #161616;
-  }
-
   .container_top{
     display: flex;
     justify-content: center;
-    margin: 35px 0px;
     margin-top: 50px;
+    margin-bottom: 6%;
   }
 
   .container_top .main{

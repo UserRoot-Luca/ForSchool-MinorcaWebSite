@@ -1,5 +1,11 @@
 <template>
     <div class="Accomodations">
+
+      <PageTitle
+        title    = "accomodations"
+        subtitle = "Take a look to our accomodations, whether it's a hotel or a house you're looking for, we probably have it"
+      />
+
       <div class="links_container">
         <div class="main">
           <Link 
@@ -68,6 +74,7 @@
 
 <script>
 import Link from '../components/accomodations/Link.vue'
+import PageTitle from '../components/PageTitle.vue'
 
 export default {
     name: 'Accomodations',
@@ -77,7 +84,8 @@ export default {
       }
     },
     components: {
-      Link
+      Link,
+      PageTitle
     }
 }
 </script>
